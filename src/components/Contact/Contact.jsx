@@ -6,13 +6,13 @@ const Contact = ({ contact, handleClick }) => {
       <div className={css.cardOutline}>
         <div className={css.cardWrapper}>
           <svg className={css.icon} width={15} height={15}>
-            <use href="/src/img/icons.svg#icon-user" />
+            <use href="./src/img/icons.svg#icon-user" />
           </svg>
           <p>{contact.name}</p>
         </div>
         <div className={css.cardWrapper}>
           <svg className={css.icon} width={15} height={15}>
-            <use href="/src/img/icons.svg#icon-phone" />
+            <use href="./src/img/icons.svg#icon-phone" />
           </svg>
           <p>{contact.number}</p>
         </div>
