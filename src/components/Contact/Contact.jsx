@@ -6,13 +6,13 @@ const Contact = ({ contact, handleClick }) => {
       <div className={css.cardOutline}>
         <div className={css.cardWrapper}>
           <svg width={15} height={15}>
-            <use xlinkHref="/src/img/icons.svg#icon-user"></use>
+            <use href="../../img/icons.svg#user"></use>
           </svg>
           <p>{contact.name}</p>
         </div>
         <div className={css.cardWrapper}>
           <svg width={15} height={15}>
-            <use xlinkHref="/src/img/icons.svg#icon-phone"></use>
+            <use href="/src/img/icons.svg#phone"></use>
           </svg>
           <p>{contact.number}</p>
         </div>
@@ -20,7 +20,7 @@ const Contact = ({ contact, handleClick }) => {
       <button
         className={css.contactBtn}
         onClick={() => handleClick(contact.id)}
-        type="click"
+        type="button"
       >
         Delete
       </button>
