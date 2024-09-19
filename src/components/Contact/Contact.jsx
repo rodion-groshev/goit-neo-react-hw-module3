@@ -5,14 +5,14 @@ const Contact = ({ contact, handleClick }) => {
     <div className={css.card}>
       <div className={css.cardOutline}>
         <div className={css.cardWrapper}>
-          <svg width={15} height={15}>
-            <use href="/src/components/Contact/icons.svg#user"></use>
+          <svg className={css.icon} width={15} height={15}>
+            <use href="/src/img/icons.svg#icon-user"></use>
           </svg>
           <p>{contact.name}</p>
         </div>
         <div className={css.cardWrapper}>
-          <svg width={15} height={15}>
-            <use href="/src/components/Contact/icons.svg#phone"></use>
+          <svg className={css.icon} width={15} height={15}>
+            <use href="/src/img/icons.svg#icon-phone"></use>
           </svg>
           <p>{contact.number}</p>
         </div>
